@@ -11,10 +11,12 @@ def load_library fp
   return translator
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon fp, emoticon
+  translator = load_library(fp)
+  return translator['get_emoticon'][emoticon]
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning fp, emoticon
+  translator = load_library(fp)
+  return translator['get_meaning'][emoticon]
 end

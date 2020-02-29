@@ -8,6 +8,7 @@ def load_library fp
     translator['get_meaning'][japanese] = k
     translator['get_emoticon'][english] = japanese
   end
+  return translator
 end
 
 def get_japanese_emoticon
